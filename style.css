@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #c1d5c0;
+}
+
+header {
+    background-color: #c1d5c0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    color: white;
+}
+
+header h1 span {
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Satisfy', cursive;
+    color: white;
+}
+
+nav {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Add the Portfolio specific styles */
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+/* DEVELOPER: Sana Abdul, IS117-005, Fall 2023 */
