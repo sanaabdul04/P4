@@ -92,39 +92,29 @@
 	}
 
 	main {
+		display: flex;
+		justify-content: space-around;
 		padding: 40px;
 		font: 'Philosopher', sans-serif;
-		float: right;
-		margin-right: 60px;
 	}
 
 	img {
-		align-content: center;
-		margin: auto;
-		padding: inherit;
 		height: 450px; 
 	}
 
-	p {
-		color: white;
-		font: 'Philosopher', sans-serif;
-		font-size: 25px;
-		float: right;
-		margin: 20px;
-		padding: 20px;
+	form {
+		flex: 1;
+		max-width: 400px;
 	}
 
-	p span {
-		font-weight: 100;
-		font-style: italic;
-		font-family: 'Satisfy', cursive;
-		color: #154a17;
+	label {
+		display: block;
+		margin-bottom: 10px;
 	}
 
-	.container {
-		width: 80%;
-		margin: 0 auto;
-		text-align: center;
+	input, textarea {
+		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.footer {
@@ -164,11 +154,11 @@
 			<li><a href="contact.html">Contact Us</a></li>
 		</ul>
 	</nav>
-	<img src="sunset.JPG" alt="Sunset">
-	<img src="balloons.JPG" alt="Hot Air Balloons">
 	<main>
-		<h1>Contact Us!</h1>
+		<img src="sunset.JPG" alt="Sunset">
+		<img src="balloons.JPG" alt="Hot Air Balloons">
 		<form action="mailto:sanaabdul04@gmail.com" method="post">
+			<h1>Contact Us!</h1>
 			<label for="name">Full Name:</label>
 			<input type="text" id="name" name="name" required>
 			<label for="email">Email:</label>
@@ -187,3 +177,4 @@
 </body>
 </html>
 <!-- DEVELOPER: Sana Abdul, IS117-005, Fall 2023 -->
+
