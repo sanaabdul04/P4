@@ -7,6 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Additional style to achieve the desired layout */
+        .service {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service-photo,
+        .service-text {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .service-photo img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +43,7 @@
         <h1>Services</h1>
         <div class="service">
             <div class="service-photo">
-                <img src="services/service1.jpg" alt="Service Photo 1" style="width: 50%;">
+                <img src="services/service1.jpg" alt="Service Photo 1">
             </div>
             <div class="service-text">
                 <h2>Photography Services</h2>
@@ -35,7 +52,7 @@
         </div>
         <div class="service">
             <div class="service-photo">
-                <img src="services/service2.jpg" alt="Service Photo 2" style="width: 50%;">
+                <img src="services/service2.jpg" alt="Service Photo 2">
             </div>
             <div class="service-text">
                 <h2>Pricing and Packages</h2>
@@ -44,7 +61,7 @@
         </div>
         <div class="service">
             <div class="service-photo">
-                <img src="services/service3.jpg" alt="Service Photo 3" style="width: 50%;">
+                <img src="services/service3.jpg" alt="Service Photo 3">
             </div>
             <div class="service-text">
                 <h2>Booking Information</h2>
@@ -60,3 +77,4 @@
 </body>
 </html>
 <!-- DEVELOPER: Sana Abdul, IS117-005, Fall 2023 -->
+
